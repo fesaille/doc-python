@@ -1,10 +1,64 @@
 # Python development environment
 
-## python version management
+## Version management: `pyenv`
 
-### Pyenv
+`Pyenv` <badge-stars repo='pyenv/pyenv'></badge-stars> intercepts Python
+commands using shim executables injected into your PATH, determines which Python
+version has been specified by your application, and passes the commands along
+to the correct Python installation.
 
-### Conda
+### Installation
+
+<badge-doc href='https://github.com/pyenv/pyenv#basic-github-checkout'>
+</badge-doc>
+
+Installation can be perfomed with a git checkout:
+
+```bash
+git clone https://github.com/pyenv/pyenv.git ~/.opt/pyenv
+```
+
+Path to pyenv must be set in `PATH`, prompt is disabled
+
+```bash
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export PYENV_ROOT=$HOME/.opt/pyenv
+export PATH=$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
+```
+
+Before installing python runtimes,
+[dependencies](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+must be installed. `CONFIGURE_OPTS` as well as `http_proxy` and `https_proxy`
+can be passed to installation.
+
+**Completion** can be installed for zsh from the checked-out repository.
+
+```bash
+install -m 644 completions/pyenv.zsh ~/.zsh/completion/_pyenv
+```
+
+### Version management
+
+Global and local python version are supported. Multiple version support can be
+enabled:
+
+```bash
+# Ensure those versions will have precedence
+pyenv global 3.8.7 3.9.1 3.7.8 miniconda3-4.7.12
+
+python3.8 --version
+# Returns 3.8.7
+```
+
+Version superseed is made with:
+
+```bash
+# set this version in .python-version
+pyenv local 3.9.0
+# or
+export PYENV_VERSION=3.9.0
+```
 
 ## Packaging
 
