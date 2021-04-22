@@ -2,7 +2,7 @@
 
 ## Unit testing
 
-See [unittest][unittest.html] and [pytest][pytest.html]
+See [unittest]( ../unittest ) and [pytest]( ../pytest)
 
 
 ## Property base testing
