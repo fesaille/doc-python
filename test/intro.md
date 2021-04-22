@@ -5,7 +5,7 @@
 See [unittest]( ../unittest ) and [pytest]( ../pytest)
 
 
-## Property base testing
+## Property-based testing
 
 This kind of testing is used in Haskell in QuickCheck <badge-doc href='https://hackage.haskell.org/package/QuickCheck'></badge-doc>.
 
