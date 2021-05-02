@@ -7,6 +7,7 @@ PEPS:
 - **Literature Overview for Type Hints** <badge-pep nr='482'></badge-pep>
 - **Theory of Type Hints** <badge-pep nr='483'></badge-pep>
 - **Type Hints** <badge-pep nr='484'></badge-pep> <badge-stars repo='python/typing'></badge-stars>
+- **Syntax for Variable Annotations** <badge-pep nr='526'></badge-pep>
 - **TypedDict** <badge-pep nr='589'></badge-pep>
 - **Protocols: Structural subtyping** <badge-pep nr='544'></badge-pep>
 
