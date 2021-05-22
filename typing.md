@@ -9,6 +9,7 @@ PEPS:
 - **Type Hints** <badge-pep nr='484'></badge-pep> <badge-stars repo='python/typing'></badge-stars>
 - **Syntax for Variable Annotations** <badge-pep nr='526'></badge-pep>
 - **Protocols: Structural subtyping** <badge-pep nr='544'></badge-pep>
+- **Distributing and Packaging Type Information** <badge-pep nr='561'></badge-pep>
 - **Postponed Evaluation of Annotations** <badge-pep nr='563'></badge-pep>
 - **TypedDict** <badge-pep nr='589'></badge-pep>
 
@@ -38,6 +39,15 @@ PEPS:
                 def __len__(self) -> int: ...
                 def __iter__(self) -> Iterator[int]: ...
         ```
+
+## Stubs
+
+!!! Info
+    A library [stub](https://www.python.org/dev/peps/pep-0484/#stub-files) defines a skeleton of the **public interface** of the library, including classes, variables and functions, and their types.
+
+`typeshed` <badge-stars repo='python/typeshed'></badge-stars> is a collection of library stubs for Python, with static types. Those are used by MyPy <badge-stars repo='python/mypy'></badge-stars> <badge-doc href='https://mypy.readthedocs.io'></badge-doc> to determine the types of standard library and third-party library functions, classes, and other definitions.
+
+Stubs files can be generated using mypy's utility [`stugen`](https://mypy.readthedocs.io/en/stable/stubgen.html). Distribution and packaging are described in <badge-pep nr='561'></badge-pep>.
 
 
 ## Generic concrete collections
