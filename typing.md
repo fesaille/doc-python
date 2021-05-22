@@ -45,10 +45,14 @@ PEPS:
 !!! Info
     A library [stub](https://www.python.org/dev/peps/pep-0484/#stub-files) defines a skeleton of the **public interface** of the library, including classes, variables and functions, and their types.
 
-`typeshed` <badge-stars repo='python/typeshed'></badge-stars> is a collection of library stubs for Python, with static types. Those are used by MyPy <badge-stars repo='python/mypy'></badge-stars> <badge-doc href='https://mypy.readthedocs.io'></badge-doc> to determine the types of standard library and third-party library functions, classes, and other definitions.
+`typeshed` <badge-stars repo='python/typeshed'></badge-stars> is a collection of library stubs for Python, with static types. Those are distributed with and used by MyPy <badge-stars repo='python/mypy'></badge-stars> <badge-doc href='https://mypy.readthedocs.io'></badge-doc> to determine the types of standard library and third-party library functions, classes, and other definitions.
 
-Stubs files can be generated using mypy's utility [`stugen`](https://mypy.readthedocs.io/en/stable/stubgen.html). Distribution and packaging are described in <badge-pep nr='561'></badge-pep>.
+Stubs files can be generated using mypy's utility [`stugen`](https://mypy.readthedocs.io/en/stable/stubgen.html). Distribution and packaging are described in <badge-pep nr='561'></badge-pep>. And type stubs for third party packages and modules can be installed from PyPI, e.g.:
 
+```terminal
+# pip install types-<PKG>
+pip install types-six types-requests
+```
 
 ## Generic concrete collections
 
