@@ -11,7 +11,18 @@ PEPS:
 - **Protocols: Structural subtyping** <badge-pep nr='544'></badge-pep>
 - **Distributing and Packaging Type Information** <badge-pep nr='561'></badge-pep>
 - **Postponed Evaluation of Annotations** <badge-pep nr='563'></badge-pep>
+- **Literal types** <badge-pep nr='586'></badge-pep>
 - **TypedDict** <badge-pep nr='589'></badge-pep>
+- **Final qualifier** <badge-pep nr='591'></badge-pep>
+- **Flexible variable annotation** <badge-pep nr='593'></badge-pep>
+- **Complementary syntax for unions** <badge-pep nr='604'></badge-pep>
+- **Parameter specification variable** <badge-pep nr='612'></badge-pep>
+- **Explicit type aliases** <badge-pep nr='613'></badge-pep>
+- **Structural pattern matching** <badge-pep nr='635'></badge-pep>
+- **Indexing with leyword arguments** <badge-pep nr='637'></badge-pep>
+- **Variadic generics** <badge-pep nr='646'></badge-pep>
+- **User-defined type guargs** <badge-pep nr='647'></badge-pep>
+- **Required typed dictionary items** <badge-pep nr='647'></badge-pep>
 
 ??? Info "Nominal/Structural subtyping"
 
