@@ -22,7 +22,7 @@ PEPS:
 - **Indexing with leyword arguments** <badge-pep nr='637'></badge-pep>
 - **Variadic generics** <badge-pep nr='646'></badge-pep>
 - **User-defined type guargs** <badge-pep nr='647'></badge-pep>
-- **Required typed dictionary items** <badge-pep nr='647'></badge-pep>
+- **Required typed dictionary items** <badge-pep nr='655'></badge-pep>
 
 ??? Info "Nominal/Structural subtyping"
 
